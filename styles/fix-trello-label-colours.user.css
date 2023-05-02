@@ -1,9 +1,11 @@
 /* ==UserStyle==
 @name           Fix Trello Label Colours
-@namespace      https://userstyles.world/user/domzor
+@namespace      https://github.com/domzor
 @version        1.0.8
+@description    The new pastel Trello labels are AWFUL so I made them look like they used to.
 @author         Dom van Blerk (https://github.com/domzor)
 @homepageURL    https://github.com/domzor/userstyles
+@license        MIT
 ==/UserStyle== */
 
 @-moz-document domain("trello.com") {
