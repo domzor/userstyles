@@ -1,0 +1,88 @@
+/* ==UserStyle==
+@name           Clean Fextralife Wiki
+@namespace      https://github.com/domzor
+@version        1.0.0
+@description    Makes Fextralife wikis look less terrible - mainly tested on the Elden Ring wiki so may not play nice with others.
+@author         Dom van Blerk (https://github.com/domzor)
+@homepageURL    https://github.com/domzor/userstyles
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("wiki.fextralife.com") {
+
+    /* Remove unused space (from blocked ads) */
+    .fex-main {
+        max-width: 1280px !important;
+        margin-top: 3em !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Remove unused space (from blocked ads) */
+    #wrapper {
+        padding-left: 0 !important;
+    }
+    
+    /* Remove the horrible background */
+    img.bg {
+        display: none !important;
+    }
+    
+    /* Remove Twitch stream */
+    #sidebar-wrapper {
+        display: none !important;
+    }
+    
+    /* "unstick" the sticky footer */
+    .footer-sticky {
+        position: relative !important;
+    }
+    
+    /* Hide chat icon */
+    a[href*="https://discord.gg/Tz2DYReRUa"] {
+        display: none !important;
+    }
+    
+    /* Hide VIP icon */
+    a[href*="fextralife.com/be-a-vip"] {
+        display: none !important;
+    }
+    
+    /* Remove empty header space*/
+    #form-header {
+        height: 0 !important;
+    }
+    
+    .WikiLogo img {
+        display: none;
+    }
+    
+    /* Elden Ring Builds Page */
+    
+    .newbuilds-tab .tabcontent .hpwidget {
+        padding: 20px;
+    }
+    
+    .newbuilds-tab .tabcontent .row {
+        display: flex;
+    }
+    
+    .newbuilds-tab .tabcontent .row > div {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+    }
+    
+    .newbuilds-tab .embed-responsive .youtubebuildembed,
+    .newbuilds-tab .embed-responsive .play,
+    .newbuilds-tab .embed-responsive iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        margin-top: 0;
+    }
+}
