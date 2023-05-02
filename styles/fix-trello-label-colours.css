@@ -1,0 +1,59 @@
+/* ==UserStyle==
+@name           Fix Trello Label Colours
+@namespace      https://userstyles.world/user/domzor
+@version        1.0.8
+@author         Dom van Blerk (https://github.com/domzor)
+@homepageURL    https://github.com/domzor/userstyles
+==/UserStyle== */
+
+@-moz-document domain("trello.com") {
+    .list-card-front-labels-container button {
+        padding: 0 8px !important;
+        --text-color: #ffffff;
+        font-weight: bold;
+    }
+
+    .list-card-front-labels-container button::before {
+        display: none;
+    }
+
+    .list-card-front-labels-container button[data-color="green"] {
+        background-color: #64bc58;
+    }
+
+    .list-card-front-labels-container button[data-color="yellow"] {
+        background-color: #f3d504;
+    }
+
+    .list-card-front-labels-container button[data-color="orange"] {
+        background-color: #fe9d32;
+    }
+
+    .list-card-front-labels-container button[data-color="red"] {
+        background-color: #ea594a;
+    }
+
+    .list-card-front-labels-container button[data-color="purple"] {
+        background-color: #c477e1;
+    }
+
+    .list-card-front-labels-container button[data-color="blue"] {
+        background-color: #077bbc;
+    }
+
+    .list-card-front-labels-container button[data-color="sky"] {
+        background-color: #16c3de;
+    }
+
+    .list-card-front-labels-container button[data-color="lime"] {
+        background-color: #57e79c;
+    }
+
+    .list-card-front-labels-container button[data-color="pink"] {
+        background-color: #fe7ac9;
+    }
+
+    .list-card-front-labels-container button[data-color="black"] {
+        background-color: #344662;
+    }
+}
