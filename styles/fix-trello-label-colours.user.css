@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Fix Trello Label Colours
 @namespace      https://github.com/domzor
-@version        1.0.8
+@version        1.0.9
 @description    The new pastel Trello labels are AWFUL so I made them look like they used to.
 @author         Dom van Blerk (https://github.com/domzor)
 @homepageURL    https://github.com/domzor/userstyles
@@ -11,8 +11,8 @@
 @-moz-document domain("trello.com") {
     .list-card-front-labels-container button {
         padding: 0 8px !important;
-        --text-color: #ffffff;
-        font-weight: bold;
+        --text-color: #ffffff !important;
+        font-weight: bold !important;
     }
 
     .list-card-front-labels-container button::before {
