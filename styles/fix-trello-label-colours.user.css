@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Fix Trello Label Colours
 @namespace      https://github.com/domzor
-@version        1.0.10
+@version        1.0.11
 @description    The new pastel Trello labels are AWFUL so I made them look like they used to.
 @author         Dom van Blerk (https://github.com/domzor)
 @homepageURL    https://github.com/domzor/userstyles
@@ -9,53 +9,53 @@
 ==/UserStyle== */
 
 @-moz-document domain("trello.com") {
-    .list-card-front-labels-container button {
-        padding: 0 8px !important;
+    button[data-color] {
         --label-text-color: #ffffff !important;
         font-weight: bold !important;
+        padding: 0 8px !important;
     }
 
-    .list-card-front-labels-container button::before {
+    button[data-color]::before {
         display: none;
     }
 
-    .list-card-front-labels-container button[data-color="green"] {
+    button[data-color="green"] {
         background-color: #64bc58;
     }
 
-    .list-card-front-labels-container button[data-color="yellow"] {
+    button[data-color="yellow"] {
         background-color: #f3d504;
     }
 
-    .list-card-front-labels-container button[data-color="orange"] {
+    button[data-color="orange"] {
         background-color: #fe9d32;
     }
 
-    .list-card-front-labels-container button[data-color="red"] {
+    button[data-color="red"] {
         background-color: #ea594a;
     }
 
-    .list-card-front-labels-container button[data-color="purple"] {
+    button[data-color="purple"] {
         background-color: #c477e1;
     }
 
-    .list-card-front-labels-container button[data-color="blue"] {
+    button[data-color="blue"] {
         background-color: #077bbc;
     }
 
-    .list-card-front-labels-container button[data-color="sky"] {
+    button[data-color="sky"] {
         background-color: #16c3de;
     }
 
-    .list-card-front-labels-container button[data-color="lime"] {
+    button[data-color="lime"] {
         background-color: #57e79c;
     }
 
-    .list-card-front-labels-container button[data-color="pink"] {
+    button[data-color="pink"] {
         background-color: #fe7ac9;
     }
 
-    .list-card-front-labels-container button[data-color="black"] {
+    button[data-color="black"] {
         background-color: #344662;
     }
 }
