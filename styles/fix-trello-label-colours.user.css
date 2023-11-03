@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Fix Trello Label Colours
 @namespace      https://github.com/domzor
-@version        1.0.11
+@version        1.0.12
 @description    The new pastel Trello labels are AWFUL so I made them look like they used to.
 @author         Dom van Blerk (https://github.com/domzor)
 @homepageURL    https://github.com/domzor/userstyles
@@ -9,53 +9,53 @@
 ==/UserStyle== */
 
 @-moz-document domain("trello.com") {
-    button[data-color] {
+    [data-color] {
         --label-text-color: #ffffff !important;
         font-weight: bold !important;
         padding: 0 8px !important;
     }
 
-    button[data-color]::before {
+    [data-color]::before {
         display: none;
     }
 
-    button[data-color="green"] {
+    [data-color="green"] {
         background-color: #64bc58;
     }
 
-    button[data-color="yellow"] {
+    [data-color="yellow"] {
         background-color: #f3d504;
     }
 
-    button[data-color="orange"] {
+    [data-color="orange"] {
         background-color: #fe9d32;
     }
 
-    button[data-color="red"] {
+    [data-color="red"] {
         background-color: #ea594a;
     }
 
-    button[data-color="purple"] {
+    [data-color="purple"] {
         background-color: #c477e1;
     }
 
-    button[data-color="blue"] {
+    [data-color="blue"] {
         background-color: #077bbc;
     }
 
-    button[data-color="sky"] {
+    [data-color="sky"] {
         background-color: #16c3de;
     }
 
-    button[data-color="lime"] {
+    [data-color="lime"] {
         background-color: #57e79c;
     }
 
-    button[data-color="pink"] {
+    [data-color="pink"] {
         background-color: #fe7ac9;
     }
 
-    button[data-color="black"] {
+    [data-color="black"] {
         background-color: #344662;
     }
 }
